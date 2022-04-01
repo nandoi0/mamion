@@ -1,0 +1,25 @@
+run server:
+npm start:
+
+
+git commands:
+
+#(1 time) initialize repo:
+git init
+
+# add the remote url
+git remote add orgin <url>
+
+
+#adding files
+git add .
+
+#local copy
+git commit -m "comments"
+
+#upload to server
+(1st time):
+git push -u origin master
+
+(nth time):
+git push

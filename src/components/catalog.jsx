@@ -19,11 +19,12 @@ const Catalog = () => {
 
 
     return (<div className='catalog'>
+        <div className='internal'>
         <h1>Mami Avion Menu</h1>
         <h2>We have {product.length} products</h2>
         {product.map(
             (prod) => (<Product key={prod._id} data={prod}/>)  )}
-
+        </div>
     
     </div>);
 };
