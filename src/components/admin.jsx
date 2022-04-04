@@ -52,8 +52,8 @@ const Admin = () => {
         </div>
      
 
-        <section>
-            <div className="register">
+        
+        <div className="register">
             <h3>Register new product</h3>
 
             <div className="my-control">
@@ -77,21 +77,8 @@ const Admin = () => {
             <div className='my-control'>
                 <button onClick={saveProduct} className='btn btn-dark'>Save Product:</button>
             </div>
-            </div>
 
-            {allProds.map((prod, index) => (
-                <div key={index}>
-                    <h5>
-                      {prod.title} - ${prod.price}
-                    </h5>
-                </div>
-            ))}
-            
-        </section>
-
-        <section>
-      
-            <div className='form'>
+            <div className='register' id="form">
                 <h3>Coupon Codes</h3>
                 <div className='my-control'>
                     <label>Code:</label>
@@ -107,7 +94,34 @@ const Admin = () => {
                         Save Coupon Code
                     </button>
                 </div>
+                <div className='form'>
+                <h3>Coupon Codes</h3>
+                <div className='my-control'>
+                    <label>Code:</label>
+                    <input onChange={handleCCChange} name="code" type="text"></input>
+                </div>
+                <div className='my-control'>
+                    <label>Discount:</label>
+                    <input onChange={handleCCChange} name="discount" type="text"></input>
+                    </div> 
+
+                <div className='my-control'>
+                    <button onClick={saveCoupon} className="btn btn-dark">
+                        Save Coupon Code
+                    </button>
+                </div>
+                </div>
+              </div>
             </div>
+
+            {allProds.map((prod, index) => (
+                <div key={index}>
+                    <h5>
+                      {prod.title} - ${prod.price}
+                    </h5>
+                </div>
+            ))}
+
 
             <div className="coupon-list">
                 {allCoupons.map((coupon, index) => (
@@ -115,9 +129,9 @@ const Admin = () => {
                     <label>{coupon.code}</label> - <label>{coupon.discount}</label>
                  </div>
             ))}
-            </div>
+        </div>
             
-        </section>
+        
        
     
       </div>

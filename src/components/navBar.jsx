@@ -7,11 +7,22 @@ import { useContext } from 'react';
 
 
 
-const NavBar = () => {
+  const NavBar = () => {
   const cart = useContext(store).cart;
+    
+  
+  const getNumber = () => {
+   
+    let total = 0;
+    for (let i = 0; i < cart.length; i++) {
+      let prod = cart[i];
+      total += prod.quantity;
+    }
+    return total;
+    //return cart.length;
+  };
     return (
-    
-    
+      <div className='nav-color'>
     <div className='navBar'>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
     <div className="container-fluid">
@@ -33,26 +44,26 @@ const NavBar = () => {
           <Link className="nav-link" to="/about">About Us</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/cart">Cart</Link>
-        </li>
-        <li className="nav-item">
           <Link className="nav-link" to="/admin">Admin</Link>
         </li>
-        <li className='nav-item'>
-          <Link className='nav-link' to="/cart">Cart</Link>
+        <li className="nav-item">
+          <Link className="nav-link" to="/cart">Cart</Link>
         </li>
           </ul>
         
       <form className="d-flex">
-        Cart: {cart.length}
+        <Link to="/cart" className="btn btn-outline-info">
+          <span className="badge bg-primary">{getNumber()}</span>  View Cart
+          </Link>
       </form>
     </div>
   </div>
-</nav>
+ </nav>
+ </div>
+ </div>
         
-    </div>
+ );
     
-    );
 };
 
 export default NavBar;

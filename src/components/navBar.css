@@ -1,15 +1,5 @@
 
 
-navBar{
-    display: flex;
-    color: black;
-    align-items: center;
-    padding-top: 10px;
-    background-color: red;
-    
-    
-    
-}
 
 .list{
     list-style: none;

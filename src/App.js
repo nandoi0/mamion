@@ -8,8 +8,8 @@ import "bootstrap/dist/js/bootstrap.min.js";
 import {} from '@fortawesome/free-solid-svg-icons'
 import Home from "./components/home";
 import About from "./components/about";
-import Admin from './components/admin'
-import Cart from './components/cart'
+import Admin from './components/admin';
+import Cart from './components/cart';
 
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import GlobalState from  "./context/globalState";
