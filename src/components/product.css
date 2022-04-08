@@ -3,9 +3,10 @@
     display: inline-block;
     margin: 5px;
     padding: 5px;
-    color: darkgoldenrod;
+    color: rgb(99, 100, 118);
     border-radius: 5px;
-    box-shadow: 5px 5px rgb(223,223,223);
+    box-shadow: -20px 10px 10px;
+    gap: 15px;
 }
 
 .product .price .product .total{

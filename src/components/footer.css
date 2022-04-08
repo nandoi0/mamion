@@ -1,7 +1,11 @@
 .footer{
-    color: goldenrod;
-    background-color: red;
-    position: absolute; bottom: 0; left: 0; right: 0;
+    background: rgb(149,146,146);
+    color: rgb(99, 100, 118);
+    background: linear-gradient(90deg, rgba(149,146,146,1) 0%, rgba(247,245,245,1) 100%, rgba(210,19,19,0.9962578781512605) 100%);
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    right: 0;
     
   
 }
