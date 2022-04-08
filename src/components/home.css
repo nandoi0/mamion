@@ -17,6 +17,8 @@
     background-color: whitesmoke;
     border-radius: 5px;
 
+    position: relative;
+
     margin: 30px 10px 10px 20px;
     box-shadow: -20px 10px 10px;
 }
@@ -29,7 +31,9 @@
     width: 60%;
     height: 50vh;
     float: left;
-    margin: 20px 100px 10px 260px;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20%;
     padding: 10px;
     box-shadow: -30px 30px 20px;
 
