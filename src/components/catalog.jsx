@@ -7,15 +7,15 @@ const Catalog = () => {
 
     let [product, setProduct] = useState([]);
 
-    const loadCatalog = () =>{
+    const loadCatalog = async () =>{
         let service = new DataService();
-        let data = service.getCatalog();
+        let data = await service.getCatalog();
         setProduct(data);
     };
 
     useEffect( () =>{
         loadCatalog();
-    });
+    }, []);
 
 
     return (<div className='catalog'>
